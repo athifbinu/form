@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="https://crmx-admin-template.multipurposethemes.com/bs5/images/favicon.ico" />
+
+  <!-- <title>Hr Admin - Dashboard</title> -->
+  <title>Servcon Hr - Employee</title>
+
+  <!-- Vendors Style-->
+  <link rel="stylesheet" href="https://marbu.in/hr-admin/assets/css/vendors_css.css" />
+
+  <!-- Style-->
+  <link rel="stylesheet" href="https://marbu.in/hr-admin/assets/css/horizontal-menu.css" />
+  <link rel="stylesheet" href="https://marbu.in/hr-admin/assets/css/style.css" />
+  <link rel="stylesheet" href="https://marbu.in/hr-admin/assets/css/skin_color.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+
+<body class="layout-top-nav light-skin theme-fruit fixed">
+  <div class="wrapper">
+    <div id="loader"></div>
+    <div class="art-bg">
+      <img src="https://crmx-admin-template.multipurposethemes.com/bs5/images/art1.svg" alt=""
+        class="art-img light-img" />
+      <img src="https://crmx-admin-template.multipurposethemes.com/bs5/images/art3.svg" alt=""
+        class="art-img dark-img" />
+    </div>
+
+    <header class="main-header">
+      <div class="inside-header">
+        <div class="d-flex align-items-center logo-box justify-content-start">
+          <!-- Logo -->
+          <a href="https://marbu.in/hr-admin/dashboard" class="logo">
+            <!-- logo-->
+            <div class="logo-lg">
+              <!-- <span class="light-logo"><img src="https://marbu.in/hr-admin/assets/images/logo-light-text.png" alt="logo"></span>
+				  <span class="dark-logo"><img src="https://marbu.in/hr-admin/assets/images/logo-light-text.png" alt="logo"></span> -->
+
+              <h1><span class="light-logo text-white">Servcon</span></h1>
+            </div>
+          </a>
+        </div>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <div class="app-menu"></div>
+
+          <div class="navbar-custom-menu r-side">
+            <ul class="nav navbar-nav">
+              <li class="notifications-menu pt-2">
+                <p class="text-white mb-0">Logged in as hr department</p>
+                <p class="text-white mb-0">Role : HR</p>
+                <p class="text-white">Designation : HR Manager</p>
+              </li>
+              <!-- Notifications -->
+              <li class="dropdown notifications-menu">
+                <a href="#"
+                  class="waves-effect waves-light dropdown-toggle btn-outline no-border btn-info-light text-white"
+                  data-bs-toggle="dropdown" title="Notifications">
+                  <i data-feather="bell"></i>
+                </a>
+                <ul class="dropdown-menu animated bounceIn">
+                  <li class="header">
+                    <div class="p-20">
+                      <div class="flexbox">
+                        <div>
+                          <h4 class="mb-0 mt-0">Notifications</h4>
+                        </div>
+                        <div>
+                          <!-- <a href="#" class="text-danger">Clear All</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu sm-scrol">
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('85');">
+                          Tariq abu Yosef applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('81');">
+                          Mohammed Abu Yosef applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/staff-leave-history" onclick="makeAsRead('75');">
+                          Leave application approved by GM
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('65');">
+                          Tariq abu Yosef applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('61');">
+                          comapny admin applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('57');">
+                          comapny admin applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('53');">
+                          comapny admin applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('50');">
+                          comapny admin applied for leave
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/action-form-request" onclick="makeAsRead('46');">
+                          Action form submitted by Tariq abu Yosef
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://marbu.in/hr-admin/leave-request-hr" onclick="makeAsRead('33');">
+                          Tariq abu Yosef applied for leave
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer">
+                    <a href="https://marbu.in/hr-admin/notification">View all</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- User Account-->
+              <li class="dropdown user user-menu">
+                <a href="#" class="waves-effect waves-light dropdown-toggle no-border p-5" data-bs-toggle="dropdown"
+                  title="User">
+                  <img class="avatar avatar-pill"
+                    src="https://marbu.in/hr-admin/uploads/employee/profile/1714113875.jpg" alt="" />
+                </a>
+                <ul class="dropdown-menu animated flipInX">
+                  <li class="user-body">
+                    <a class="dropdown-item" href="https://marbu.in/hr-admin/profile"><i
+                        class="ti-user text-muted me-2"></i> Profile</a>
+                    <!--<a class="dropdown-item" href="#"><i class="ti-wallet text-muted me-2"></i> My Wallet</a>-->
+                    <!--<a class="dropdown-item" href="#"><i class="ti-settings text-muted me-2"></i> Settings</a>-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://marbu.in/hr-admin/logout"
+                      onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                        class="ti-lock text-muted me-2"></i> Logout</a>
+                    <form id="logout-form" action="https://marbu.in/hr-admin/logout" method="POST" class="d-none">
+                      <input type="hidden" name="_token" value="xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5" />
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <nav class="main-nav" role="navigation">
+      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <input id="main-menu-state" type="checkbox" />
+      <label class="main-menu-btn" for="main-menu-state">
+        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+      </label>
+      <!-- Sample menu definition -->
+      <ul id="main-menu" class="sm sm-blue" style="margin-top: 12px">
+        <li class="">
+          <a href="https://marbu.in/hr-admin/dashboard"><i data-feather="monitor"></i>Dashboard</a>
+        </li>
+        <li class="">
+          <a href="https://marbu.in/hr-admin/company"><i data-feather="monitor"></i>Company</a>
+        </li>
+        <li>
+          <a href="#"><i data-feather="grid"></i>Hr Department</a>
+          <ul>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/department"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Department</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/designation"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Designation</a>
+            </li>
+            <li class="current">
+              <a href="https://marbu.in/hr-admin/employee"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Employee Profiles</a>
+            </li>
+
+            <li class="">
+              <a href="https://marbu.in/hr-admin/payroll"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Pay Roll</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/resignation-request-hr"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>Staff Resignation</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/archive-employee"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>Archive Employee</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/salary-slip"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Staff Salary Slip</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/hr_holiday"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Manage Holiday Calendar</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/employee_tree"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Employee Tree</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/shifts/calendar">
+                <i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
+                Shift
+              </a>
+              <ul>
+                <li class="">
+                  <a href="https://marbu.in/hr-admin/shifts/add">
+                    <i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>
+                    Add Shift</a>
+                </li>
+                <li class="">
+                  <a href="https://marbu.in/hr-admin/shifts/assign">
+                    <i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Assign Shift</a>
+                </li>
+                <li class="">
+                  <a href="https://marbu.in/hr-admin/shifts/break">
+                    <i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Add Break</a>
+                </li>
+                <li class="">
+                  <a href="https://marbu.in/hr-admin/shifts/rotate">
+                    <i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Shift Rotation</a>
+                </li>
+                <li class="">
+                  <a href="https://marbu.in/hr-admin/shifts/calendar">
+                    <i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Calendar View</a>
+                </li>
+              </ul>
+            </li>
+            <!--<li><a href="addholiday.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Add Holiday</a></li>-->
+          </ul>
+        </li>
+
+        <li class="">
+          <a href="https://marbu.in/hr-admin/holiday_calendar"><i data-feather="calendar"></i>Holiday Calendar</a>
+        </li>
+        <li>
+          <a href="#"><i data-feather="user"></i>Role Administration</a>
+          <ul>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/role"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Role and Permission</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a href="https://marbu.in/hr-admin/staff-salary-slip"><i data-feather="cast"></i>Salary Slip</a>
+        </li>
+
+        <li>
+          <a href="#"><i data-feather="user"></i>Leave Tracker</a>
+          <ul>
+            <!-- <li class=""><a href="#" data-bs-toggle="modal" data-bs-target=".Annualmodal"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Annual Leave</a></li> -->
+
+            <li class="">
+              <a href="https://marbu.in/hr-admin/leave-types"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Leave Types</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/leave-request-hr"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>Staff Leaves</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/action-form-request"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>Action Form Request</a>
+            </li>
+            <li class="">
+              <a href="https://marbu.in/hr-admin/staff-leave-history"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>Staff Leaves History</a>
+            </li>
+
+            <li class="">
+              <a href="https://marbu.in/hr-admin/leave-request"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Team Leave</a>
+            </li>
+
+            <li class="">
+              <a href="https://marbu.in/hr-admin/employee-leave-history"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>My Leave history</a>
+            </li>
+
+            <li class="">
+              <a href="https://marbu.in/hr-admin/employee-action-form"><i class="icon-Commit"><span
+                    class="path1"></span><span class="path2"></span></i>View Action Forms</a>
+            </li>
+
+            <li class="">
+              <a href="https://marbu.in/hr-admin/action-form"><i class="icon-Commit"><span class="path1"></span><span
+                    class="path2"></span></i>Submit Action Form</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <br />
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <div style="margin-bottom: 25px" class="content-header">
+          <div class="d-flex align-items-center">
+            <div class="me-auto">
+              <h1 style="text-align: center;" class="page-title">Employee Registration</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- form -->
+
+        <section style="margin: 30px;">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div style="width: 100%" class="col-md-6">
+                <div class="glass-card" style="margin-bottom: 40px;">
+                  <div style="margin-bottom: 15px" class="info-header">
+                    <h4 style="color: rgb(34, 13, 192);">Basic Information</h4>
+                    <hr />
+                  </div>
+
+                  <section class="double-form">
+                    <form class="form-left">
+                      <div>
+                        <label for="employee-id-left">Employee ID</label>
+                        <input type="text" id="employee-id-left" />
+                      </div>
+                      <div>
+                        <label for="first-name-left">First Name</label>
+                        <input type="text" id="first-name-left" />
+                      </div>
+                      <div>
+                        <label for="last-name-left">Last Name</label>
+                        <input type="text" id="last-name-left" />
+                      </div>
+                    </form>
+
+                    <form class="form-right">
+                      <div>
+                        <label for="employee-id-right">Nick name</label>
+                        <input type="text" id="employee-id-right" />
+                      </div>
+                      <div>
+                        <label for="first-name-right">Email address</label>
+                        <input type="email" id="first-name-right" />
+                      </div>
+                    </form>
+                  </section>
+                </div>
+
+                <div class="glass-card" style="margin-bottom: 40px;">
+                  <div style="margin-bottom: 15px" class="info-header">
+                    <h4 style="color: rgb(34, 13, 192);">Work information</h4>
+                    <hr />
+                  </div>
+
+                  <section class="double-form">
+                    <form class="form-left">
+                      <div>
+                        <label for="employee-id-left">Department</label>
+
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                          <option value="saab">HR</option>
+                          <option value="mercedes">Management</option>
+                          <option value="audi">Marketing</option>
+                          <option value="audi">IT</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label for="first-name-left">Location</label>
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label for="last-name-left">Destination</label>
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                          <option value="saab">CEO</option>
+                          <option value="mercedes">Administration</option>
+                          <option value="audi">Marketing</option>
+                          <option value="audi">IT</option>
+                        </select>
+                      </div>
+                    </form>
+
+                    <form class="form-right">
+                      <div>
+                        <label for="employee-id-right">Role</label>
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                          <option value="saab">HR</option>
+                          <option value="mercedes">Management</option>
+                          <option value="audi">Marketing</option>
+                          <option value="audi">IT</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label for="first-name-right">Employment type</label>
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                          <option value="saab">HR</option>
+                          <option value="mercedes">Management</option>
+                          <option value="audi">Marketing</option>
+                          <option value="audi">IT</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label for="first-name-right">Employment status</label>
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                          <option value="saab">HR</option>
+                          <option value="mercedes">Management</option>
+                          <option value="audi">Marketing</option>
+                          <option value="audi">IT</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label for="first-name-right">Source of Hire</label>
+                        <select name="#" id="">
+                          <option value="select">Select</option>
+                          <option value="saab">HR</option>
+                          <option value="mercedes">Management</option>
+                          <option value="audi">Marketing</option>
+                          <option value="audi">IT</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label for="first-name-right">Date of joining</label>
+                        <input type="date" id="date-of-joining" name="date-of-joining" />
+                      </div>
+                    </form>
+                  </section>
+                </div>
+
+                <div class="glass-card" style="margin-bottom: 40px;">
+                  <div style="margin-bottom: 15px" class="info-header">
+                    <h4 style="color: rgb(34, 13, 192);">Personal Details</h4>
+                    <hr />
+                  </div>
+
+                  <section class="double-form">
+                    <form class="form-left">
+                      <div>
+                        <label for="employee-id-left">Date of Birth</label>
+                        <input type="date" id="employee-id-left" />
+                      </div>
+                      <div>
+                        <label for="first-name-left">Age</label>
+                        <input type="text" id="first-name-left" />
+                      </div>
+
+                      <div>
+                        <label for="marital-status">Marital Status</label>
+                        <div style="padding: 5px">
+                          <input type="checkbox" id="married" name="marital-status" value="married" />
+                          <label for="married">Married</label>
+
+                          <input type="checkbox" id="single" name="marital-status" value="single" />
+                          <label for="single">Single</label>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label for="last-name-left">About us</label>
+
+                        <textarea id="last-name-left" name=""></textarea>
+                      </div>
+                    </form>
+
+                    <form class="form-right">
+                      <label for="last-name-left">Ask me about/expertise</label>
+
+                      <textarea id="last-name-left" name=""></textarea>
+                    </form>
+                  </section>
+                </div>
+
+                <div style="margin-bottom: 20px;" class="glass-card">
+                  <div style="margin-bottom: 15px" class="info-header">
+                    <h4 style="color: rgb(34, 13, 192);">Contact Details</h4>
+                    <hr />
+                  </div>
+
+                  <section class="double-form">
+                    <form class="form-left">
+                      <div>
+                        <label for="employee-id-left">Work phone number</label>
+                        <input type="number" id="employee-id-left" />
+                      </div>
+                      <div>
+                        <label for="first-name-left">Extension</label>
+                        <input type="text" id="first-name-left" />
+                      </div>
+
+                      <div>
+                        <label for="first-name-left">Seating Location</label>
+                        <input type="text" id="first-name-left" />
+                      </div>
+
+                      <div>
+                        <label for="last-name-left">Tags</label>
+
+                        <textarea id="last-name-left" name=""></textarea>
+                      </div>
+                    </form>
+
+                    <form class="form-right">
+                      <div>
+                        <label for="last-name-left">Personnel Mobile Number
+                        </label>
+
+                        <input type="number" id="last-name-left" name=""></input>
+                      </div>
+
+                      <div>
+                        <label for="last-name-left">Email
+                        </label>
+
+                        <input type="email" id="last-name-left" name=""></input>
+                      </div>
+                    </form>
+                  </section>
+                </div>
+
+
+                <div class="sub-btn">
+                  <button>submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- last joining modal -->
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="pull-right d-none d-sm-inline-block"></div>
+      &copy; 2024 <a href="#">Hr Admin</a>. All Rights Reserved.
+    </footer>
+
+    <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- Page Content overlay -->
+
+  <!-- Vendor JS -->
+  <script src="https://marbu.in/hr-admin/assets/js/vendors.min.js"></script>
+  <!-- <script src="https://marbu.in/hr-admin/assets/js/pages/chat-popup.js"></script> -->
+  <script src="https://marbu.in/hr-admin/assets/assets/icons/feather-icons/feather.min.js"></script>
+
+  <!-- <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/echarts/dist/echarts-en.min.js"></script> -->
+  <!-- <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/chartist-js-develop/chartist.js"></script> -->
+  <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/datatable/datatables.min.js"></script>
+  <!-- <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/apexcharts-bundle/irregular-data-series.js"></script> -->
+  <script
+    src="https://marbu.in/hr-admin/assets/assets/vendor_components/jquery-steps-master/build/jquery.steps.js"></script>
+  <!-- <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script> -->
+  <script
+    src="https://marbu.in/hr-admin/assets/assets/vendor_components/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/sweetalert/sweetalert.min.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/jquery-ui/jquery-ui.min.js"></script>
+  <script
+    src="https://marbu.in/hr-admin/assets/assets/vendor_components/perfect-scrollbar-master/perfect-scrollbar.jquery.min.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/fullcalendar/lib/moment.min.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/assets/vendor_components/fullcalendar/fullcalendar.min.js"></script>
+  <!-- CrmX Admin App -->
+  <script src="https://marbu.in/hr-admin/assets/js/jquery.smartmenus.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/js/menus.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/js/template.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/js/demo.js"></script>
+  <!-- <script src="https://marbu.in/hr-admin/assets/js/pages/dashboard2.js"></script> -->
+  <script src="https://marbu.in/hr-admin/assets/js/pages/data-table.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/js/pages/steps.js"></script>
+  <script src="https://marbu.in/hr-admin/assets/js/pages/calendar.js"></script>
+  <script>
+    function makeAsRead(id) {
+      $.ajax({
+        url: "https://marbu.in/hr-admin/notification_make_read",
+        type: "POST",
+        data: {
+          _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+          id: id,
+        },
+        dataType: "json",
+        success: function (res) { },
+        error: function (e) {
+          //    loader_off();
+        },
+      });
+    }
+    //clear input error
+    var allInputElements = document.querySelectorAll(".clear_error");
+
+    allInputElements.forEach(function (inputElement) {
+      inputElement.addEventListener("input", function () {
+        var inputValue = inputElement.value;
+        var inerrorValue = inputElement.getAttribute("data-inerror");
+        if (inputValue !== "" && inerrorValue !== "") {
+          document.getElementById(inerrorValue).innerHTML = "";
+        }
+      });
+    });
+    //clear input error end
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    function AddAllow() {
+      event.preventDefault();
+      var allowance = $("#allowance").val();
+      var allowAmount = $("#allowAmount").val();
+      var isNumeric = /^\d+$/.test(allowAmount);
+      var emp_id = $("#eidtId1").val();
+      var allowanceText = $("#allowance option:selected").text();
+
+      if (allowance == "") {
+        document.getElementById("allowance_error").innerHTML =
+          "This field is required";
+      } else if (allowAmount == "") {
+        document.getElementById("allowAmt_error").innerHTML = "required";
+      } else if (isNumeric == false) {
+        document.getElementById("allowAmt_error").innerHTML = "Amount";
+      } else {
+        $.ajax({
+          url: "https://marbu.in/hr-admin/store-allowance",
+          type: "POST",
+          data: {
+            _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+            allowance: allowance,
+            allowAmount: allowAmount,
+            emp_id: emp_id,
+          },
+          dataType: "json",
+          success: function (res) {
+            console.log(res["status"]);
+            if (res["status"] == true) {
+              document.getElementById("allowance").value = "";
+              document.getElementById("allowAmount").value = "";
+              var newRow =
+                '<tr data-id="' +
+                res["id"] +
+                '"><td>' +
+                allowanceText +
+                '</td><td style="text-align:right;">' +
+                allowAmount +
+                '</td><td style="text-align:center; color:red; cursor:pointer;"><a  onclick="removeAllow(' +
+                res["id"] +
+                ')">Remove</a></td></tr>';
+              $("#allowanceTable").append(newRow);
+            } else if (res["status"] == false) {
+              document.getElementById("input_error2").innerHTML =
+                res["message"];
+            }
+          },
+          error: function (e) {
+            //    loader_off();
+          },
+        });
+      }
+    }
+    function removeAllow(id) {
+      $.ajax({
+        url: "https://marbu.in/hr-admin/remove-allowance",
+        type: "POST",
+        data: {
+          _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+          id: id,
+        },
+        dataType: "json",
+        success: function (res) {
+          console.log(res);
+          if (res["status"] == true) {
+            $('#allowanceTable tr[data-id="' + id + '"]').remove();
+          } else if (res["status"] == false) {
+          }
+        },
+        error: function (e) {
+          //    loader_off();
+        },
+      });
+    }
+    function addLeave() {
+      event.preventDefault();
+      var leave = $("#leave").val();
+      var leaveDays = $("#leavedays").val();
+      var isNumeric = /^\d+$/.test(leaveDays);
+      var emp_id = $("#eidtId1").val();
+      var leaveText = $("#leave option:selected").text();
+
+      if (leave == "") {
+        document.getElementById("leave_error").innerHTML =
+          "This field is required";
+      } else if (leaveDays == "") {
+        document.getElementById("leaveDays_error").innerHTML = "required";
+      } else if (isNumeric == false) {
+        document.getElementById("leaveDays_error").innerHTML = "No days";
+      } else {
+        $.ajax({
+          url: "https://marbu.in/hr-admin/store-leave",
+          type: "POST",
+          data: {
+            _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+            leave: leave,
+            leaveDays: leaveDays,
+            emp_id: emp_id,
+          },
+          dataType: "json",
+          success: function (res) {
+            console.log(res["status"]);
+            if (res["status"] == true) {
+              document.getElementById("leave").value = "";
+              document.getElementById("leavedays").value = "";
+              var newRow =
+                '<tr data-id="' +
+                res["id"] +
+                '"><td>' +
+                leaveText +
+                '</td><td style="text-align:right;">' +
+                leaveDays +
+                '</td><td style="text-align:center; color:red; cursor:pointer;"><a  onclick="removeLeave(' +
+                res["id"] +
+                ')">Remove</a></td></tr>';
+              $("#leaveTable").append(newRow);
+            } else if (res["status"] == false) {
+              document.getElementById("input_error2").innerHTML =
+                res["message"];
+            }
+          },
+          error: function (e) {
+            //    loader_off();
+          },
+        });
+      }
+    }
+    function removeLeave(id) {
+      $.ajax({
+        url: "https://marbu.in/hr-admin/remove-leave",
+        type: "POST",
+        data: {
+          _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+          id: id,
+        },
+        dataType: "json",
+        success: function (res) {
+          console.log(res);
+          if (res["status"] == true) {
+            $('#leaveTable tr[data-id="' + id + '"]').remove();
+          } else if (res["status"] == false) {
+          }
+        },
+        error: function (e) {
+          //    loader_off();
+        },
+      });
+    }
+    function addDocument() {
+      event.preventDefault();
+      var document_name = $("#document").val();
+      var document_no = $("#document_no").val();
+      var document_exp = $("#document_exp").val();
+      var document_copy = $("#document_copy").val();
+
+      if (document_name == "") {
+        document.getElementById("doc_error").innerHTML =
+          "This field is required";
+      } else if (document_no == "") {
+        document.getElementById("doc_no_error").innerHTML =
+          "This field is required";
+      } else if (document_exp == "") {
+        document.getElementById("doc_exp_error").innerHTML =
+          "This field is required";
+      } else if (document_copy == "") {
+        document.getElementById("doc_copy_error").innerHTML =
+          "This field is required";
+      } else {
+        var formData = new FormData($("#3")[0]);
+
+        $.ajax({
+          url: "https://marbu.in/hr-admin/store-document",
+          type: "POST",
+          data: formData,
+          processData: false, //add this
+          contentType: false,
+          dataType: "json",
+          success: function (res) {
+            console.log(res["status"]);
+            if (res["status"] == true) {
+              document.getElementById("document").value = "";
+              document.getElementById("document_no").value = "";
+              document.getElementById("document_exp").value = "";
+              document.getElementById("document_copy").value = "";
+              var newRow =
+                '<tr data-id="' +
+                res["id"] +
+                '"><td>' +
+                res["doc"] +
+                "</td><td>" +
+                res["doc_no"] +
+                "</td><td >" +
+                res["doc_exp_date"] +
+                '</td><td style="text-align:center; color:red; cursor:pointer;"><a  onclick="removeDocument(' +
+                res["id"] +
+                ')">Remove</a></td></tr>';
+              $("#documentTable").append(newRow);
+              document.getElementById("doc_checked").value = "done";
+            } else if (res["status"] == false) {
+              document.getElementById("input_error2").innerHTML =
+                res["message"];
+            }
+          },
+          error: function (e) {
+            //    loader_off();
+          },
+        });
+      }
+    }
+    function removeDocument(id) {
+      $.ajax({
+        url: "https://marbu.in/hr-admin/remove-document",
+        type: "POST",
+        data: {
+          _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+          id: id,
+        },
+        dataType: "json",
+        success: function (res) {
+          console.log(res);
+          if (res["status"] == true) {
+            if (res["doc_count"] == 0) {
+              document.getElementById("doc_checked").value = "";
+            }
+            $('#documentTable tr[data-id="' + id + '"]').remove();
+          } else if (res["status"] == false) {
+          }
+        },
+        error: function (e) {
+          //    loader_off();
+        },
+      });
+    }
+    function deleteEmployee(id) {
+      event.preventDefault();
+      swal("Are you sure, Delete Department ?", {
+        buttons: {
+          cancel: "No, Cancel",
+          delete: "Yes, Delete",
+        },
+      }).then((value) => {
+        switch (value) {
+          case "cancel":
+            swal("Cancelled", res["message"], "warning");
+            break;
+
+          case "delete":
+            $.ajax({
+              url: "https://marbu.in/hr-admin/delete-employee",
+              type: "POST",
+              data: {
+                _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+                id: id,
+              },
+              dataType: "json",
+              success: function (res) {
+                console.log(res);
+                if (res["status"] == true) {
+                  swal({
+                    title: "Success!",
+                    text: res["message"],
+                    icon: "success",
+                  }).then((result) => {
+                    if (result == true) {
+                      location.reload();
+                    }
+                  });
+                } else if (res["status"] == false) {
+                  swal({
+                    title: "Success!",
+                    text: res["message"],
+                    icon: "success",
+                  }).then((result) => {
+                    if (result == true) {
+                      location.reload();
+                    }
+                  });
+                }
+              },
+              error: function (e) {
+                //    loader_off();
+              },
+            });
+            break;
+
+          default:
+            swal("Cancelled", "Deletion Cancelled", "warning");
+        }
+      });
+    }
+
+    function getEmployee(id) {
+      var IdElements = document.getElementsByClassName("eidtId");
+      event.preventDefault();
+
+      $.ajax({
+        url: "https://marbu.in/hr-admin/edit-employee",
+        type: "POST",
+        data: {
+          _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+          id: id,
+        },
+        dataType: "json",
+        success: function (res) {
+          console.log(res);
+          getReportingPerson(res.employee.company_id);
+          for (let i = 0; i < IdElements.length; i++) {
+            IdElements[i].value = id;
+          }
+          // step 1
+          document.getElementById("first_name").value =
+            res.employee.first_name;
+          document.getElementById("last_name").value = res.employee.last_name;
+          document.getElementById("gender").value = res.employee.gender;
+          document.getElementById("dob").value = res.employee.dob;
+          document.getElementById("mobile").value = res.employee.mobile;
+          document.getElementById("emergency_number").value =
+            res.employee.emerg_number;
+          document.getElementById("email").value = res.employee.email;
+          // document.getElementById("password").value='Enter On';
+          document.getElementById("country").value = res.employee.country;
+          document.getElementById("zone").value = res.employee.zone;
+          document.getElementById("street").value = res.employee.street;
+          document.getElementById("building").value = res.employee.building;
+          document.getElementById("unit_number").value =
+            res.employee.unit_number;
+          // step 2
+          document.getElementById("company").value = res.employee.company_id;
+          document.getElementById("department").value =
+            res.employee.department_id;
+          document.getElementById("designation").value =
+            res.employee.designation_id;
+          document.getElementById("role").value = res.employee.role_id;
+          document.getElementById("joining_date").value =
+            res.employee.joining_date;
+          document.getElementById("official_contact").value =
+            res.employee.official_contact;
+          document.getElementById("basic_salary").value =
+            res.employee.basic_salary;
+          setTimeout(function () {
+            document.getElementById("reporting_person").value =
+              res.employee.reporting_person;
+          }, 5000);
+          document.getElementById("flight_ticket").value =
+            res.employee.flight_ticket;
+          document.getElementById("sponsor").value = res.employee.sponsor;
+          document.getElementById("contract_file_old").value =
+            res.employee.contract_file;
+          if (res.employee.have_flight_ticket == 0) {
+            document.getElementById("have_tickets").checked = true;
+            document.getElementById("flight_ticket").disabled = true;
+          }
+          for (var i = 0; i < res.emp_allowance.length; i++) {
+            var newRow =
+              '<tr data-id="' +
+              res.emp_allowance[i].id +
+              '"><td>' +
+              res.emp_allowance[i].allowance +
+              '</td><td style="text-align:right;">' +
+              res.emp_allowance[i].amount +
+              '</td><td style="text-align:center; color:red; cursor:pointer;"><a  onclick="removeAllow(' +
+              res.emp_allowance[i].id +
+              ')">Remove</a></td></tr>';
+            $("#allowanceTable").append(newRow);
+          }
+          for (var i = 0; i < res.emp_leaves.length; i++) {
+            var newRow =
+              '<tr data-id="' +
+              res.emp_leaves[i].id +
+              '"><td>' +
+              res.emp_leaves[i].leaves +
+              '</td><td style="text-align:right;">' +
+              res.emp_leaves[i].days +
+              '</td><td style="text-align:center; color:red; cursor:pointer;"><a  onclick="removeLeave(' +
+              res.emp_leaves[i].id +
+              ')">Remove</a></td></tr>';
+            $("#leaveTable").append(newRow);
+          }
+          // step 3
+          document.getElementById("passport_no").value =
+            res.employee.passport_no;
+          document.getElementById("passport_issue_date").value =
+            res.employee.passport_issue_date;
+          document.getElementById("passport_exp_date").value =
+            res.employee.passport_exp_date;
+          document.getElementById("qatar_id_card_no").value =
+            res.employee.qatar_id_card_no;
+          document.getElementById("occupation_on_id").value =
+            res.employee.occupation_on_id;
+          document.getElementById("qatar_id_expu_date").value =
+            res.employee.qatar_id_exp_date;
+          document.getElementById("passport_copy_old").value =
+            res.employee.passport_copy;
+          document.getElementById("qatar_id_copy_old").value =
+            res.employee.qatar_id_copy;
+          //step 4
+          for (var i = 0; i < res.emp_documents.length; i++) {
+            var newRow =
+              '<tr data-id="' +
+              res.emp_documents[i].id +
+              '"><td>' +
+              res.emp_documents[i].document +
+              "</td><td>" +
+              res.emp_documents[i].document_no +
+              "</td><td >" +
+              res.emp_documents[i].document_exp_date +
+              '</td><td style="text-align:center; color:red; cursor:pointer;"><a  onclick="removeDocument(' +
+              res.emp_documents[i].id +
+              ')">Remove</a></td></tr>';
+            $("#documentTable").append(newRow);
+            document.getElementById("doc_checked").value = "done";
+          }
+          // step 5
+          document.getElementById("profile_old").value =
+            res.employee.profile_img;
+          var imageUrl =
+            "https://marbu.in/hr-admin/uploads/employee/profile/" +
+            res.employee.profile_img;
+          document.getElementById("pro_pic").src = imageUrl;
+        },
+        error: function (e) {
+          //    loader_off();
+        },
+      });
+    }
+    // function clearInputs(){
+    // 	var inputElements = document.querySelectorAll("input");
+    // 	inputElements.forEach(function(inputElement) {
+    //                 inputElement.value = "";
+    //             });
+    // }
+    function getReportingPerson(id) {
+      event.preventDefault();
+
+      $.ajax({
+        url: "https://marbu.in/hr-admin/get-employ-list",
+        type: "POST",
+        data: {
+          _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+          id: id,
+        },
+        dataType: "json",
+        success: function (res) {
+          console.log(res);
+          if (res.length > 0) {
+            var html = '<option value="">select</option>';
+
+            for (var i = 0; i < res.length; i++) {
+              html +=
+                '<option value="' +
+                res[i].id +
+                '">' +
+                res[i].first_name +
+                " " +
+                res[i].last_name +
+                "</option>";
+            }
+            $("#reporting_person").html(html);
+          } else {
+            var html = '<option value="">select</option>';
+
+            html += '<option value="0">Admin</option>';
+
+            $("#reporting_person").html(html);
+          }
+        },
+        error: function (e) {
+          //    loader_off();
+        },
+      });
+    }
+    function makeResigned(id) {
+      event.preventDefault();
+      swal("Are you sure, Give Resignation ?", {
+        buttons: {
+          cancel: "No, Cancel",
+          delete: "Yes, Update",
+        },
+      }).then((value) => {
+        switch (value) {
+          case "cancel":
+            swal("Cancelled", res["message"], "warning");
+            break;
+
+          case "delete":
+            $.ajax({
+              url: "https://marbu.in/hr-admin/make-resigned",
+              type: "POST",
+              data: {
+                _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+                id: id,
+              },
+              dataType: "json",
+              success: function (res) {
+                console.log(res);
+                if (res["status"] == true) {
+                  swal({
+                    title: "Success!",
+                    text: res["message"],
+                    icon: "success",
+                  }).then((result) => {
+                    if (result == true) {
+                      location.reload();
+                    }
+                  });
+                } else if (res["status"] == false) {
+                  swal({
+                    title: "Success!",
+                    text: res["message"],
+                    icon: "success",
+                  }).then((result) => {
+                    if (result == true) {
+                      location.reload();
+                    }
+                  });
+                }
+              },
+              error: function (e) {
+                //    loader_off();
+              },
+            });
+            break;
+
+          default:
+            swal("Cancelled", "Deletion Cancelled", "warning");
+        }
+      });
+    }
+
+    function flightTicket() {
+      var haveTicketsCheckbox = document.getElementById("have_tickets");
+      var isChecked = haveTicketsCheckbox.checked;
+
+      if (isChecked) {
+        document.getElementById("flight_ticket").value = 0;
+        document.getElementById("flight_ticket").disabled = true;
+      } else {
+        document.getElementById("flight_ticket").disabled = false;
+        // Perform actions when the checkbox is not checked.
+      }
+    }
+    function getLastjoiningdate(id) {
+      document.getElementById("editid_lastjoing").value = id;
+    }
+    function updateLast_joining() {
+      event.preventDefault();
+      var Ljdate = $("#last_joining_date").val();
+      var empId = $("#editid_lastjoing").val();
+
+      if (Ljdate == "") {
+        document.getElementById("input_error_ljd").innerHTML =
+          "This field is required";
+      } else {
+        $.ajax({
+          url: "https://marbu.in/hr-admin/update-last-joining-date",
+          type: "POST",
+          data: {
+            _token: "xICLqGDQeMeG1ATdVBzh1BL7PKQqm5bjpaTjlDf5",
+            Ljdate: Ljdate,
+            empId: empId,
+          },
+          dataType: "json",
+          success: function (res) {
+            console.log(res);
+            if (res["status"] == true) {
+              $("#modaleditdepart").modal("hide");
+              swal({
+                title: "Success!",
+                text: res["message"],
+                icon: "success",
+              }).then((result) => {
+                if (result == true) {
+                  location.reload();
+                }
+              });
+            } else if (res["status"] == false) {
+              document.getElementById("input_error").innerHTML =
+                "News not found";
+            }
+          },
+          error: function (e) {
+            //    loader_off();
+          },
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
